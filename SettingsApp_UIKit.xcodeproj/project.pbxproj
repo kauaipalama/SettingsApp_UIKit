@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B474A2F526ABA42600F9CBF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474A2F426ABA42600F9CBF6 /* AppDelegate.swift */; };
-		B474A2F726ABA42600F9CBF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474A2F626ABA42600F9CBF6 /* SceneDelegate.swift */; };
-		B474A2F926ABA42600F9CBF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B474A2F826ABA42600F9CBF6 /* ViewController.swift */; };
 		B474A2FC26ABA42600F9CBF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B474A2FA26ABA42600F9CBF6 /* Main.storyboard */; };
 		B474A2FE26ABA42700F9CBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B474A2FD26ABA42700F9CBF6 /* Assets.xcassets */; };
 		B474A30126ABA42700F9CBF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B474A2FF26ABA42700F9CBF6 /* LaunchScreen.storyboard */; };
@@ -18,8 +16,6 @@
 /* Begin PBXFileReference section */
 		B474A2F126ABA42600F9CBF6 /* SettingsApp_UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingsApp_UIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B474A2F426ABA42600F9CBF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B474A2F626ABA42600F9CBF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B474A2F826ABA42600F9CBF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B474A2FB26ABA42600F9CBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B474A2FD26ABA42700F9CBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B474A30026ABA42700F9CBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +52,45 @@
 		B474A2F326ABA42600F9CBF6 /* SettingsApp_UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				B474A2F426ABA42600F9CBF6 /* AppDelegate.swift */,
-				B474A2F626ABA42600F9CBF6 /* SceneDelegate.swift */,
-				B474A2F826ABA42600F9CBF6 /* ViewController.swift */,
-				B474A2FA26ABA42600F9CBF6 /* Main.storyboard */,
-				B474A2FD26ABA42700F9CBF6 /* Assets.xcassets */,
-				B474A2FF26ABA42700F9CBF6 /* LaunchScreen.storyboard */,
-				B474A30226ABA42700F9CBF6 /* Info.plist */,
+				B474A30B26ABDFC900F9CBF6 /* Controller */,
+				B474A30A26ABDFA100F9CBF6 /* View */,
+				B474A30926ABDF6500F9CBF6 /* UI */,
+				B474A30826ABDEE500F9CBF6 /* Resources */,
 			);
 			path = SettingsApp_UIKit;
+			sourceTree = "<group>";
+		};
+		B474A30826ABDEE500F9CBF6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B474A2FD26ABA42700F9CBF6 /* Assets.xcassets */,
+				B474A30226ABA42700F9CBF6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B474A30926ABDF6500F9CBF6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B474A2FA26ABA42600F9CBF6 /* Main.storyboard */,
+				B474A2FF26ABA42700F9CBF6 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B474A30A26ABDFA100F9CBF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B474A2F426ABA42600F9CBF6 /* AppDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B474A30B26ABDFC900F9CBF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B474A2F926ABA42600F9CBF6 /* ViewController.swift in Sources */,
 				B474A2F526ABA42600F9CBF6 /* AppDelegate.swift in Sources */,
-				B474A2F726ABA42600F9CBF6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QXP9H2CH3;
-				INFOPLIST_FILE = SettingsApp_UIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SettingsApp_UIKit/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QXP9H2CH3;
-				INFOPLIST_FILE = SettingsApp_UIKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SettingsApp_UIKit/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
